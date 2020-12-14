@@ -121,7 +121,6 @@ input::placeholder{
 
 /* Filtres de recherche */
 
-
 section.search .filters{
     display: flex;
     flex-wrap: wrap;
@@ -181,10 +180,9 @@ section.search .filters .btn-filter .btn-content{
 
 
 /* Disponibilité */
-
 section.search .disponibility{
     display: flex;
-
+    padding: 0 0 1rem 0;
 }
 section.search .disponibility .icon{
     display: flex;
@@ -198,7 +196,89 @@ section.search .disponibility .icon{
 }
 section.search .disponibility .text{
     flex: 1;
+    font-size: 0.9rem;
     padding:  0.3rem 0 0 0.6rem;
+}
+
+/* Les hôtels*/
+section.hotels{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Les hôtels populaires*/
+section.hotels .most-popular{
+    flex-basis: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    padding: 1rem;
+}
+section.hotels .most-popular >.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0 2rem;
+}
+section.hotels .most-popular .hotels-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 1rem 0;
+}
+section.hotels .most-popular .hotels-list .hotel-card{
+    flex-basis: 100%;
+    height: 145px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0.4rem 0;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+}
+section.hotels .most-popular .hotels-list .hotel-card .thumbnail{
+    width: 40%;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+section.hotels .most-popular .hotels-list .hotel-card .description{
+    width: 60%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section.hotels .most-popular .hotels-list .hotel-card .description .offer{
+    flex-grow: 1;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+section.hotels .most-popular .hotels-list .hotel-card .description .rating .fa-star{
+    color: #0065FC;
+}
+section.hotels .most-popular .hotels-list .hotel-card:nth-child(2) .description .rating .fa-star:nth-child(5){
+    color: #D9D9D9;
+}
+section.hotels .most-popular .hotels-list .hotel-card:nth-child(3) .description .rating .fa-star:nth-child(4){
+    color: #D9D9D9;
+}
+section.hotels .most-popular .hotels-list .hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
+    color: #D9D9D9;
+}
+
+
+
+/* Hotels localisé */
+section.hotels .local-hotels{
+    flex: 1;
+    height: auto;
+    background-color: bisque;
 }
 
 
@@ -271,7 +351,7 @@ section.search .disponibility .text{
 */
 
 @media (min-width: 1281px) {
-
+    /* Filtres */
     section.search .filters{
         margin: 2rem 0 1rem 0;
     }
@@ -288,6 +368,38 @@ section.search .disponibility .text{
     }
     section.search .filters .btn-filter .btn-content{
         padding: 0 1rem;
+    }
+
+    /* Hôtels */
+    section.hotels{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    section.hotels .most-popular{
+        flex-basis: 30%;
+        height: auto;
+        background-color: #F2F2F2;
+        margin: 0 1rem;
+        border-radius: 20px;
+        padding: 1rem 3rem;
+    }
+    section.hotels .local-hotels{
+        flex-grow: 1;
+        height: auto;
+        background-color: #F2F2F2;
+        margin: 0 2rem 0 1rem;
+        border-radius: 20px;
+    }
+    section.hotels .most-popular .hotels-list{
+        padding: 0 0 0 0;
+        margin: 0 0 1rem 0;
+    }
+    section.hotels .most-popular .hotels-list .hotel-card{
+        margin: 1rem 0;
+    }
+    section.hotels .most-popular .hotels-list .hotel-card .thumbnail{
+        background-size: 100% auto;
     }
 
 }
