@@ -31,7 +31,6 @@
         left: 50%;
         transform: translate(-50%,0);
         width: 100%;
-        height: 3px;
         background-color: #0065FC;
     }
 
@@ -281,7 +280,6 @@ section.hotels .most-popular .hotels-list .hotel-card:nth-child(3) .description 
 section.hotels .local-hotels{
     flex-basis: 100%;
     height: auto;
-    background-color: bisque;
     padding: 1rem;
 }
 section.hotels .local-hotels >.title{
@@ -354,6 +352,56 @@ section.hotels .local-hotels .view-more{
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0 0 0.5rem 0.5rem;
+}
+
+/* Activités */
+section.activities{
+    padding: 1.5rem;
+}
+section.activities >.title{
+    margin: 0 0 2rem;
+}
+section.activities .activities-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section.activities .activities-list .flex-activity-card{
+    padding: 0 0 1.5rem 0;
+}
+section.activities .activities-list .flex-activity-card .activity-card{
+    height: 190px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+section.activities .activities-list .flex-activity-card .activity-card .thumbnail{
+    flex-grow: 1;
+    margin: 0;
+
+}
+section.activities .activities-list .flex-activity-card .activity-card .thumbnail .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0 0;
+    background-size: 100% auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 100% 20%;
+}
+
+section.activities .activities-list .flex-activity-card .activity-card .title{
+    flex-basis: 30%;
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+}
+section.activities .activities-list .flex-activity-card:nth-child(2) .activity-card .thumbnail .image{
+    background-position: 100% 45%;
 }
 
 
@@ -462,7 +510,7 @@ section.hotels .local-hotels .view-more{
         padding: 1rem 3rem;
     }
     section.hotels .most-popular >.title{
-        margin: 2rem 0 1rem 0;
+        margin: 1.5rem 0 1rem 0;
     }
     section.hotels .most-popular .hotels-list .hotel-card{
         margin: 1rem 0;
@@ -543,6 +591,15 @@ section.hotels .local-hotels .view-more{
         font-size: 1.2rem;
         margin: 0 0 0 1rem;
     }
+
+    /* Activités */
+    section.activities{
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+    section.activities >.title{
+        margin: 0 0 2rem;
+    }
+
 
 }
 
