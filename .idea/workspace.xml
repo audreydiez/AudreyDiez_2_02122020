@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b380fd1-59b6-4b22-a0e0-5c319686081a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/desktop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/desktop.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -65,7 +65,9 @@
       <workItem from="1608284181413" duration="7673000" />
       <workItem from="1608297906312" duration="2000" />
       <workItem from="1608297956749" duration="736000" />
-      <workItem from="1608298909248" duration="6184000" />
+      <workItem from="1608298909248" duration="6323000" />
+      <workItem from="1608541332165" duration="979000" />
+      <workItem from="1608626806089" duration="1550000" />
     </task>
     <servers />
   </component>
