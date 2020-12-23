@@ -395,20 +395,20 @@ footer{
     flex-direction: column;
     font-size: 1rem;
 }
-footer .footer-columns{
+footer section.footer-columns{
     margin: 0 2rem;
     flex: 1;
 }
-footer .footer-columns ul{
+footer section.footer-columns ul{
     list-style-type: none;
     margin: 0;
     padding: 1rem 0;
 
 }
-footer .footer-columns ul li{
+footer section.footer-columns ul li{
     padding: 0 0 0.5rem 0;
 }
-footer .footer-columns ul li > a{
+footer section.footer-columns ul li > a{
     text-decoration: none;
     color: inherit;
 }
@@ -416,8 +416,8 @@ footer .footer-columns ul li > a{
 
 
 /*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ##Device = Laptops and +
+  #
 */
 
 @media (min-width: 1280px) {
@@ -586,7 +586,31 @@ footer .footer-columns ul li > a{
 
     }
 
+    /* Footer */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem 2rem;
+    }
+    footer section.footer-columns{
+        margin: 0 0;
+        flex-basis: 33.33333%;
+    }
+    footer section.footer-columns ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem 0;
 
+    }
+    footer section.footer-columns ul li{
+        padding: 0 0 1rem 0;
+    }
+    footer section.footer-columns ul li > a{
+        text-decoration: none;
+        color: inherit;
+    }
 
 
 }
