@@ -412,15 +412,311 @@ footer section.footer-columns ul li > a{
     text-decoration: none;
     color: inherit;
 }
+@media (min-width: 390px){
+    /* Filtres de recherche */
+    section.search section.filters .btn-filter:nth-child(3){
+        margin: 0 1rem 1rem 0;
+    }
+}
+
+@media (min-width: 576px) {
+
+    /* Filtres de recherche */
+    section.search section.filters .btn-filter{
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter:nth-child(1){
+        flex-basis: 100%;
+    }
+    section.search section.filters .btn-filter:nth-child(3){
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter .btn-content{
+        padding: 0 1.4rem;
+    }
+
+    /* Hotels localisé */
+    section.hotels section.local{
+        flex-basis: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    section.hotels section.local section.hotels-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem 0 0 0;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card{
+        flex-basis: calc(50% - 1rem);
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(odd){
+        margin-right: 2rem;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card figure{
+        flex-basis: 100%;
+        height: 125px;
+
+    }
+    section.hotels section.local section.hotels-list article.hotel-card figure img{
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        margin: 5px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card figure figcaption{
+        margin: 0 15px;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card .description{
+        width: 100%;
+        margin: 1.7rem 1rem 0.5rem 1rem;
+    }
+    section.hotels section.local section.hotels-list .description .offer{
+        flex-grow: 1;
+        font-size: 0.9rem;
+        margin: 0 0 1rem 0;
+    }
+    section.hotels section.local section.hotels-list .description .rating{
+        flex-grow: 1;
+        font-size: 0.9rem;
+        padding-top: 0.25rem;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card .description .rating .fa-star{
+        color: #0065FC;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(1) .description .rating .fa-star:nth-child(5){
+        color: #D9D9D9;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
+        color: #D9D9D9;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(4){
+        color: #D9D9D9;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(5){
+        color: #D9D9D9;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(5) .description .rating .fa-star:nth-child(5){
+        color: #D9D9D9;
+    }
+    section.hotels section.local .view-more{
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    /* Activités */
+    aside.activities{
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    aside.activities > h2{
+        padding: 0 0 2rem 0;
+    }
+    aside.activities section.activities-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+        height: 900px;
+    }
+    aside.activities section.activities-content section.activities-col{
+        flex-basis: 50%;
+        height: 50%;
+        align-content: flex-start;
+    }
+    aside.activities section.activities-content section.activities-col article.activity{
+        margin: 0 1rem 0 1rem;
+    }
+    /* padding sous les deux colonnes */
+    aside.activities section.activities-content section.activities-col.col-1 {
+        padding-bottom: 2rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-1 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 {
+        height: 50%;
+        order: 4;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 {
+        height: 50%;
+    }
+
+    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col article.activity figure{
+        width: 100%;
+        height: calc(100% - 55px);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Header et Navbar */
+    header nav ul li.nav-logo{
+        flex-grow: 1;
+    }
+    header nav ul li.nav-sign-in{
+        order: 4;
+        margin: 0 0 0 0;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+    header nav ul li:nth-child(-n+2){
+        flex-basis: inherit;
+    }
+    header nav ul li:nth-last-of-type(-n+2){
+        flex-basis: inherit;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+    header nav ul li.active{
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    /* Barre de recherche  */
+    .search-bar{
+        padding-bottom: 1rem;
+    }
+
+    /* Filtres de recherche */
+    section.search section.filters .btn-filter{
+        z-index: -2;
+        align-items: baseline;
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter:nth-child(1){
+        flex-basis: 100%;
+        line-height: 1.7rem;
+    }
+    section.search section.filters .btn-filter:nth-child(3){
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter .btn-content{
+        padding: 0 1.4rem;
+    }
 
 
 
-/*
-  ##Device = Laptops and +
-  #
-*/
+    /* Activités */
+    aside.activities{
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    aside.activities > h2{
+        padding: 0 0 2rem 0;
+    }
+    aside.activities section.activities-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+        height: 900px;
+    }
+    aside.activities section.activities-content section.activities-col{
+        flex-basis: 50%;
+        height: 50%;
+        align-content: flex-start;
+    }
+    aside.activities section.activities-content section.activities-col article.activity{
+        margin: 0 1rem 0 1rem;
+    }
+    /* padding sous les deux colonnes */
+    aside.activities section.activities-content section.activities-col.col-1 {
+        padding-bottom: 2rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-1 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 {
+        height: 50%;
+        order: 4;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 {
+        height: 50%;
+    }
 
-@media (min-width: 1280px) {
+    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col article.activity figure{
+        width: 100%;
+        height: calc(100% - 55px);
+    }
+
+
+    /* Footer */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem 2rem;
+    }
+    footer section.footer-columns{
+        margin: 0 0;
+        flex-basis: 33.33333%;
+    }
+    footer section.footer-columns ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    footer section.footer-columns ul li{
+        padding: 0 0 1rem 0;
+    }
+    footer section.footer-columns ul li > a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
+
+
+@media (min-width: 992px) {
 
     /* Header et Navbar */
     header nav ul li.nav-logo{
@@ -428,7 +724,195 @@ footer section.footer-columns ul li > a{
     }
     header nav ul li.nav-sign-in{
         order: 4;
-        margin: 0 0rem 0 0rem;
+        margin: 0 0 0 0;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+    header nav ul li:nth-child(-n+2){
+        flex-basis: inherit;
+    }
+    header nav ul li:nth-last-of-type(-n+2){
+        flex-basis: inherit;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+    header nav ul li.active{
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    /* Barre de recherche  */
+    .search-bar{
+        padding-bottom: 1rem;
+    }
+
+    /* Filtres de recherche */
+    section.search section.filters .btn-filter{
+        z-index: -2;
+        align-items: baseline;
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter:nth-child(1){
+        flex-basis: 100%;
+        line-height: 1.7rem;
+    }
+    section.search section.filters .btn-filter:nth-child(3){
+        margin: 0 2rem 1rem 0;
+    }
+    section.search section.filters .btn-filter .btn-content{
+        padding: 0 1.4rem;
+    }
+
+    /* Hôtels */
+    section.hotels{
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+    /* Hôtels Populaires*/
+    section.hotels section.popular{
+        flex-basis: calc(40%);
+        border-radius: 25px;
+        padding: 0;
+    }
+    section.hotels section.popular > h2{
+        padding: 2rem 2rem 0 2rem;
+    }
+    section.hotels section.popular section.hotels-list{
+        flex-direction: column;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    /* Hôtels Locaux*/
+    section.hotels section.local{
+        flex-basis: calc(60% - 2rem);
+        padding: 0;
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        margin-right: 2rem;
+    }
+    section.hotels section.local > h2{
+        padding: 2rem 0 0 2rem;
+    }
+    section.hotels section.local section.hotels-list{
+        flex-direction: row;
+        padding: 2rem 1rem 0 1rem;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card{
+        flex-basis: calc(50% - 2rem);
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+    section.hotels section.local section.hotels-list article.hotel-card:nth-child(odd) {
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+    section.hotels section.local .view-more{
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 1rem 1rem 1.5rem 2rem;
+    }
+
+    /* Activités */
+    aside.activities{
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    aside.activities > h2{
+        padding: 0 0 2rem 0;
+    }
+    aside.activities section.activities-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+        height: 900px;
+    }
+    aside.activities section.activities-content section.activities-col{
+        flex-basis: 50%;
+        height: 50%;
+        align-content: flex-start;
+    }
+    aside.activities section.activities-content section.activities-col article.activity{
+        margin: 0 1rem 0 1rem;
+    }
+    /* padding sous les deux colonnes */
+    aside.activities section.activities-content section.activities-col.col-1 {
+        padding-bottom: 2rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-1 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 {
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 {
+        height: 50%;
+        order: 4;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 {
+        height: 50%;
+    }
+
+    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1){
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1){
+        height: calc(50% - 2rem);
+        margin: 0 1rem 2rem 1rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2){
+        height: 50%;
+    }
+    aside.activities section.activities-content section.activities-col article.activity figure{
+        width: 100%;
+        height: calc(100% - 55px);
+    }
+
+
+    /* Footer */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem 2rem;
+    }
+    footer section.footer-columns{
+        margin: 0 0;
+        flex-basis: 33.33333%;
+    }
+    footer section.footer-columns ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    footer section.footer-columns ul li{
+        padding: 0 0 1rem 0;
+    }
+    footer section.footer-columns ul li > a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    /* Header et Navbar */
+    header nav ul li.nav-logo{
+        flex-grow: 1;
+    }
+    header nav ul li.nav-sign-in{
+        order: 4;
+        margin: 0 0 0 0;
         padding: 1.5rem 1.5rem 1rem 1.5rem;
     }
     header nav ul li:nth-child(-n+2){
@@ -474,7 +958,7 @@ footer section.footer-columns ul li > a{
     /* Filtres de recherche */
     section.search section.filters .btn-filter{
         z-index: -2;
-        align-items: baseline;
+        align-items: center;
         margin: 0 2rem 1rem 0;
     }
     section.search section.filters .btn-filter:nth-child(1){
@@ -488,7 +972,6 @@ footer section.footer-columns ul li > a{
     section.search section.filters .btn-filter .btn-content{
         padding: 0 1.4rem;
     }
-
 
     /* Hôtels */
     section.hotels{
@@ -536,7 +1019,7 @@ footer section.footer-columns ul li > a{
 
     /* Activités */
     aside.activities{
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
     }
     aside.activities > h2{
         padding: 0 0 2rem 0;
@@ -548,10 +1031,30 @@ footer section.footer-columns ul li > a{
         margin: 0 -1rem;
         height: 450px;
     }
+
     aside.activities section.activities-content section.activities-col{
         flex-basis: 25%;
         height: 100%;
     }
+
+    /* padding sous les deux colonnes */
+    aside.activities section.activities-content section.activities-col.col-1 {
+        padding-bottom: 2rem;
+    }
+    aside.activities section.activities-content section.activities-col.col-1 {
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-2 {
+        height: 100%;
+    }
+    aside.activities section.activities-content section.activities-col.col-3 {
+        height: 100%;
+        order: initial;
+    }
+    aside.activities section.activities-content section.activities-col.col-4 {
+        height: 100%;
+    }
+
     aside.activities section.activities-content section.activities-col article.activity{
         margin: 0 1rem 0 1rem;
     }
@@ -602,7 +1105,6 @@ footer section.footer-columns ul li > a{
         list-style-type: none;
         margin: 0;
         padding: 1rem 0;
-
     }
     footer section.footer-columns ul li{
         padding: 0 0 1rem 0;
@@ -611,7 +1113,6 @@ footer section.footer-columns ul li > a{
         text-decoration: none;
         color: inherit;
     }
-
 
 }
 
