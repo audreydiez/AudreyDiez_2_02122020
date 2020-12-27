@@ -77,6 +77,7 @@ section.search h1{
 .icon-location{
     position: relative;
     width: 55px;
+    min-width: 40px;
     height: 50px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
@@ -84,6 +85,7 @@ section.search h1{
 .button-go{
     position: relative;
     width: 70px;
+    min-width: 40px;
     height: 50px;
     background-color: #0065FC;
     border-radius: 15px;
@@ -95,7 +97,7 @@ section.search h1{
     transform: translate(-50%,-50%);
 }
 input[type=text]{
-    flex: 1;
+    width: 80%;
     font-size: 1.1rem;
     padding: 0 0 0 20px;
     border-color: transparent;
@@ -628,7 +630,7 @@ footer section.footer-columns ul li > a{
     }
     aside.activities section.activities-content section.activities-col.col-2 a.activity-link:nth-child(2) article.activity{
         height: calc(100%);
-        margin: 0 1rem 0rem 1rem;
+        margin: 0 1rem 0 1rem;
     }
     /**/
 
@@ -654,7 +656,7 @@ footer section.footer-columns ul li > a{
     }
     aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1){
         height: calc(100%);
-        margin: 0 1rem 0rem 1rem;
+        margin: 0 1rem 0 1rem;
     }
     aside.activities section.activities-content section.activities-col.col-4 a.activity-link:nth-child(1) article.activity{
         height: calc(100% - 2rem);
@@ -716,7 +718,28 @@ footer section.footer-columns ul li > a{
 
     /* Barre de recherche  */
     .search-bar{
+        max-width: 415px;
+        height: 50px;
         padding-bottom: 1rem;
+    }
+    .button-go{
+        position: relative;
+        width: 150px;
+        height: 50px;
+        background-color: #0065FC;
+        border-radius: 0 15px 15px 0;
+    }
+    .button-go::after{
+        content: "Rechercher";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-weight: bold;
+    }
+    .button-go i{
+        visibility: hidden;
     }
 
     /* Filtres de recherche */
@@ -749,8 +772,8 @@ footer section.footer-columns ul li > a{
         padding: 3rem 0;
     }
     footer section.footer-columns{
-        margin: 0 0;
-        flex-basis: 33.33333%;
+        margin: 0 2rem;
+        flex-basis: calc(33.33333% - 4rem);
     }
     footer section.footer-columns ul{
         list-style-type: none;
@@ -890,11 +913,11 @@ footer section.footer-columns ul li > a{
         flex-wrap: wrap;
         flex-direction: row;
         font-size: 1rem;
-        padding: 3rem 2rem;
+        padding: 3rem 0;
     }
     footer section.footer-columns{
-        margin: 0 0;
-        flex-basis: 33.33333%;
+        margin: 0 2rem;
+        flex-basis: calc(33.33333% - 4rem);
     }
     footer section.footer-columns ul{
         list-style-type: none;
@@ -937,30 +960,7 @@ footer section.footer-columns ul li > a{
         color: #0065FC;
     }
 
-    /* Barre de recherche  */
-    .search-bar{
-        max-width: 415px;
-        height: 50px;
-    }
-    .button-go{
-        position: relative;
-        width: 110px;
-        height: 50px;
-        background-color: #0065FC;
-        border-radius: 0 15px 15px 0;
-    }
-    .button-go::after{
-        content: "Rechercher";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        color: #fff;
-        font-weight: bold;
-    }
-    .button-go i{
-        visibility: hidden;
-    }
+
 
     /* Filtres de recherche */
     section.search section.filters .btn-filter{
@@ -1022,7 +1022,7 @@ footer section.footer-columns ul li > a{
     }
     section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card{
 
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 0;
     }
     section.hotels section.local .view-more{
         font-weight: bold;
@@ -1088,12 +1088,12 @@ footer section.footer-columns ul li > a{
         flex-wrap: wrap;
         flex-direction: row;
         font-size: 1rem;
-        padding: 3rem 0rem;
+        padding: 3rem 0;
 
     }
     footer section.footer-columns{
-        margin: 0 0;
-        flex-basis: 33.33333%;
+        margin: 0 2rem;
+        flex-basis: calc(33.33333% - 4rem);
     }
     footer section.footer-columns ul{
         list-style-type: none;
