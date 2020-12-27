@@ -64,4 +64,5 @@ a{
     padding: 0;
     text-decoration: none;
     color: inherit;
+    display: block;
 }

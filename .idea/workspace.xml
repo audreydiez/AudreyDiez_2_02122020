@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b380fd1-59b6-4b22-a0e0-5c319686081a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -68,6 +69,7 @@
       <workItem from="1608626806089" duration="21453000" />
       <workItem from="1608721120402" duration="14265000" />
       <workItem from="1608816114230" duration="6157000" />
+      <workItem from="1609075149813" duration="10563000" />
     </task>
     <servers />
   </component>
@@ -85,6 +87,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="398" key="SwitcherDM" timestamp="1609075862731">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="498" height="398" key="SwitcherDM/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1609075862730" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AudreyDiez_2_02122020$Live_Edit.dat" NAME="Live Edit Coverage Results" MODIFIED="1607440643491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
