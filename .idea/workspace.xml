@@ -87,12 +87,6 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="498" height="398" key="SwitcherDM" timestamp="1609075862731">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="498" height="398" key="SwitcherDM/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1609075862730" />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AudreyDiez_2_02122020$Live_Edit.dat" NAME="Live Edit Coverage Results" MODIFIED="1607440643491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/OC_P2$Live_Edit.dat" NAME="Live Edit Coverage Results" MODIFIED="1606923871401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
