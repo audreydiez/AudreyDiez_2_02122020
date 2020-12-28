@@ -113,13 +113,13 @@ input::placeholder{
 
 /* Filtres de recherche */
 
-section.search section.filters{
+section.search .filters{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 1rem 0;
 }
-section.search section.filters .btn-filter{
+section.search .filters .btn-filter{
     position: relative;
     display: flex;
     align-items: center;
@@ -132,21 +132,21 @@ section.search section.filters .btn-filter{
     transition: all 0.2s linear;
 }
 /*Hover sur boutons filtres*/
-section.search section.filters a.btn-filter:hover{
+section.search .filters a.btn-filter:hover{
     background-color: #DEEBFF;
 }
-section.search section.filters .btn-filter:nth-child(1){
+section.search .filters .btn-filter:nth-child(1){
     border-color: transparent;
     font-size: 1.2rem;
     font-weight: bold;
     flex: 0 1 100%;
     margin: 0 1rem 1rem 0;
 }
-section.search section.filters .btn-filter:nth-child(3){
+section.search .filters .btn-filter:nth-child(3){
     margin: 0 0 1rem 0;
 }
 
-section.search section.filters .btn-filter .icon{
+section.search .filters .btn-filter .icon{
     position: relative;
     width: 45px;
     height: 45px;
@@ -156,7 +156,7 @@ section.search section.filters .btn-filter .icon{
     align-items: center;
     justify-content: center;
 }
-section.search section.filters .btn-filter .icon::before{
+section.search .filters .btn-filter .icon::before{
     z-index: -1;
     position: absolute;
     top: -2px;
@@ -168,7 +168,7 @@ section.search section.filters .btn-filter .icon::before{
     border-radius: 45px;
 }
 
-section.search section.filters .btn-filter .btn-content{
+section.search .filters .btn-filter .btn-content{
     padding: 0 0.5rem;
     font-weight: bold;
     align-items: center;
@@ -199,28 +199,28 @@ section.search .disponibility .text{
 
 /*!* Les hôtels*/
 
-section.hotels{
+.hotels{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-section.hotels section.popular{
+.hotels section.popular{
     flex-basis: 100%;
     height: auto;
     background-color: #F2F2F2;
     padding: 2rem 1rem;
 }
-section.hotels section.popular > h2 i{
+.hotels section.popular > h2 i{
     float: right;
     line-height: 1.5rem;
 }
-section.hotels section.popular section.hotels-list{
+.hotels section.popular .hotels-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2rem 0 0 0;
 }
-section.hotels section.popular section.hotels-list article.hotel-card{
+.hotels section.popular .hotels-list article.hotel-card{
     flex-basis: 100%;
     height: 145px;
     background-color: #fff;
@@ -231,11 +231,11 @@ section.hotels section.popular section.hotels-list article.hotel-card{
     margin: 0.4rem 0;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
 }
-section.hotels section.popular section.hotels-list article.hotel-card figure {
+.hotels section.popular .hotels-list article.hotel-card figure {
     flex-basis: 50%;
     height: 100%;
 }
-section.hotels section.popular section.hotels-list article.hotel-card figure img{
+.hotels section.popular .hotels-list article.hotel-card figure img{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     margin: 5px;
@@ -243,49 +243,49 @@ section.hotels section.popular section.hotels-list article.hotel-card figure img
     object-fit: cover;
     overflow: hidden;
 }
-section.hotels section.popular section.hotels-list article.hotel-card .description{
+.hotels section.popular .hotels-list article.hotel-card .description{
     width: 50%;
     margin: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-section.hotels section.popular section.hotels-list article.hotel-card .description >.title h3{
+.hotels section.popular .hotels-list article.hotel-card .description >.title h3{
     font-size: 0.9rem;
 }
-section.hotels section.popular section.hotels-list article.hotel-card .description .offer{
+.hotels section.popular .hotels-list article.hotel-card .description .offer{
     flex-grow: 1;
     font-size: 0.9rem;
     margin: 0.5rem 0 0 0;
 }
-section.hotels section.popular section.hotels-list article.hotel-card .description .rating .fa-star{
+.hotels section.popular .hotels-list article.hotel-card .description .rating .fa-star{
     color: #0065FC;
 }
-section.hotels section.popular section.hotels-list article.hotel-card:nth-child(2) .description .rating .fa-star:nth-child(5){
+.hotels section.popular .hotels-list article.hotel-card:nth-child(2) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
-section.hotels section.popular section.hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
+.hotels section.popular .hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
 
 /* Hotels localisé */
-section.hotels section.local{
+.hotels section.local{
     flex-basis: 100%;
     height: auto;
     padding: 2rem 1rem;
 }
-section.hotels section.local section.hotels-list{
+.hotels section.local .hotels-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2rem 0 0 0;
 }
-section.hotels section.local section.hotels-list a.hotel-card-link{
+.hotels section.local .hotels-list a.hotel-card-link{
     flex-basis: 100%;
     height: 200px;
     margin: 0.4rem 0;
 }
-section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card{
+.hotels section.local .hotels-list a.hotel-card-link article.hotel-card{
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
@@ -293,12 +293,12 @@ section.hotels section.local section.hotels-list a.hotel-card-link article.hotel
     flex-direction: row;
     flex-wrap: wrap;
 }
-section.hotels section.local section.hotels-list article.hotel-card figure{
+.hotels section.local .hotels-list article.hotel-card figure{
     flex-basis: 100%;
     height: 125px;
 
 }
-section.hotels section.local section.hotels-list article.hotel-card figure img{
+.hotels section.local .hotels-list article.hotel-card figure img{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     margin: 5px;
@@ -307,64 +307,64 @@ section.hotels section.local section.hotels-list article.hotel-card figure img{
     overflow: hidden;
 }
 /* Ajustement images */
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(1) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(1) figure img{
     object-position: 0 50%;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(2) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(2) figure img{
     object-position: 0 75%;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(3) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(3) figure img{
     object-position: 0 75%;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(4) figure img{
     object-position: 100% 65%;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(5) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(5) figure img{
     object-position: 0 50%;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(6) figure img{
+.hotels section.local .hotels-list article.hotel-card:nth-child(6) figure img{
     object-position: 0 50%;
 }
 
 
 
 
-section.hotels section.local section.hotels-list article.hotel-card figure figcaption{
+.hotels section.local .hotels-list article.hotel-card figure figcaption{
     margin: 0 15px;
 }
-section.hotels section.local section.hotels-list article.hotel-card .description{
+.hotels section.local .hotels-list article.hotel-card .description{
     width: 100%;
     margin: 1.7rem 1rem 0.5rem 1rem;
 }
-section.hotels section.local section.hotels-list .description .offer{
+.hotels section.local .hotels-list .description .offer{
     flex-grow: 1;
     font-size: 0.9rem;
     margin: 0 0 1rem 0;
 }
-section.hotels section.local section.hotels-list .description .rating{
+.hotels section.local .hotels-list .description .rating{
     flex-grow: 1;
     font-size: 0.9rem;
     padding-top: 0.25rem;
 }
-section.hotels section.local section.hotels-list article.hotel-card .description .rating .fa-star{
+.hotels section.local .hotels-list article.hotel-card .description .rating .fa-star{
     color: #0065FC;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(1) .description .rating .fa-star:nth-child(5){
+.hotels section.local .hotels-list article.hotel-card:nth-child(1) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
+.hotels section.local .hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(4){
+.hotels section.local .hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(4){
     color: #D9D9D9;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(5){
+.hotels section.local .hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
-section.hotels section.local section.hotels-list article.hotel-card:nth-child(5) .description .rating .fa-star:nth-child(5){
+.hotels section.local .hotels-list article.hotel-card:nth-child(5) .description .rating .fa-star:nth-child(5){
     color: #D9D9D9;
 }
-section.hotels section.local .view-more{
+.hotels section.local .view-more{
     font-weight: bold;
     font-size: 1.2rem;
     padding: 2rem 1rem 0 1rem;
@@ -378,23 +378,23 @@ aside.activities{
 aside.activities > h2{
     padding: 0 0 2rem 0;
 }
-aside.activities section.activities-content{
+aside.activities .activities-content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-aside.activities section.activities-content section.activities-col{
+aside.activities .activities-content .activities-col{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-aside.activities section.activities-content section.activities-col a.activity-link{
+aside.activities .activities-content .activities-col a.activity-link{
     flex-basis: 100%;
     height: 190px;
     margin-bottom: 2rem;
 }
 
-aside.activities section.activities-content section.activities-col a.activity-link article.activity{
+aside.activities .activities-content .activities-col a.activity-link article.activity{
 
     border-radius: 25px;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
@@ -404,11 +404,11 @@ aside.activities section.activities-content section.activities-col a.activity-li
     flex-direction: column;
     flex-wrap: wrap;
 }
-aside.activities section.activities-content section.activities-col article.activity figure{
+aside.activities .activities-content .activities-col article.activity figure{
     width: 100% ;
     height: 70%;
 }
-aside.activities section.activities-content section.activities-col article.activity figure img{
+aside.activities .activities-content .activities-col article.activity figure img{
     width: 100% ;
     height: 100%;
     border-radius: 15px 15px 0 0;
@@ -417,27 +417,27 @@ aside.activities section.activities-content section.activities-col article.activ
 }
 
 /* Ajustement images */
-aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1) figure img{
+aside.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
     object-position: 100% 10%;
 }
-aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1) figure img{
+aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
     object-position: 100% 45%;
 }
-aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2) figure img{
+aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(2) figure img{
     object-position: 100% 0;
 }
-aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1) figure img{
+aside.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
     object-position: 100% 0;
 }
-aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1) figure img{
+aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
     object-position: 100% 20%;
 }
-aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2) figure img{
+aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(2) figure img{
     object-position: 100% 10%;
 }
 
 
-aside.activities section.activities-content section.activities-col article.activity figure figcaption{
+aside.activities .activities-content .activities-col article.activity figure figcaption{
     margin: 1rem;
 }
 
@@ -472,7 +472,7 @@ footer section.footer-columns ul li > a{
 }
 @media (min-width: 390px){
     /* Filtres de recherche */
-    section.search section.filters .btn-filter:nth-child(3){
+    section.search .filters .btn-filter:nth-child(3){
         margin: 0 1rem 1rem 0;
     }
 
@@ -481,30 +481,30 @@ footer section.footer-columns ul li > a{
 @media (min-width: 576px) {
 
     /* Filtres de recherche */
-    section.search section.filters .btn-filter{
+    section.search .filters .btn-filter{
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter:nth-child(1){
+    section.search .filters .btn-filter:nth-child(1){
         flex-basis: 100%;
     }
-    section.search section.filters .btn-filter:nth-child(3){
+    section.search .filters .btn-filter:nth-child(3){
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter .btn-content{
+    section.search .filters .btn-filter .btn-content{
         padding: 0 1.4rem;
     }
 
     /* Hotels populaires */
-    section.hotels section.popular section.hotels-list article.hotel-card:nth-child(3) figure img{
+    .hotels section.popular .hotels-list article.hotel-card:nth-child(3) figure img{
         object-position: 100% 60%;
     }
     /* Hotels localisé */
-    section.hotels section.local{
+    .hotels section.local{
         flex-basis: 100%;
         height: auto;
         padding: 2rem 1rem;
     }
-    section.hotels section.local section.hotels-list{
+    .hotels section.local .hotels-list{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -513,19 +513,19 @@ footer section.footer-columns ul li > a{
 
 
 
-    section.hotels section.local section.hotels-list a.hotel-card-link{
+    .hotels section.local .hotels-list a.hotel-card-link{
         flex-basis: calc(50% - 0.5rem);
     }
 
-    section.hotels section.local section.hotels-list a.hotel-card-link:nth-child(odd) {
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(odd) {
     margin-right: 1rem;
     }
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card figure{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card figure{
         flex-basis: 100%;
         height: 125px;
     }
 
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card figure img{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card figure img{
         width: calc(100% - 10px);
         height: calc(100% - 10px);
         margin: 5px;
@@ -535,46 +535,46 @@ footer section.footer-columns ul li > a{
     }
 
 
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card:nth-child(6) figure img{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card:nth-child(6) figure img{
         object-position: 100% 55%;
     }
 
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card figure figcaption{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card figure figcaption{
         margin: 0 15px;
     }
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card .description{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card .description{
         width: 100%;
         margin: 1.7rem 1rem 0.5rem 1rem;
     }
-    section.hotels section.local section.hotels-list .description .offer{
+    .hotels section.local .hotels-list .description .offer{
         flex-grow: 1;
         font-size: 0.9rem;
         margin: 0 0 1rem 0;
     }
-    section.hotels section.local section.hotels-list .description .rating{
+    .hotels section.local .hotels-list .description .rating{
         flex-grow: 1;
         font-size: 0.9rem;
         padding-top: 0.25rem;
     }
-    section.hotels section.local section.hotels-list article.hotel-card .description .rating .fa-star{
+    .hotels section.local .hotels-list article.hotel-card .description .rating .fa-star{
         color: #0065FC;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(1) .description .rating .fa-star:nth-child(5){
+    .hotels section.local .hotels-list article.hotel-card:nth-child(1) .description .rating .fa-star:nth-child(5){
         color: #D9D9D9;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
+    .hotels section.local .hotels-list article.hotel-card:nth-child(3) .description .rating .fa-star:nth-child(5){
         color: #D9D9D9;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(4){
+    .hotels section.local .hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(4){
         color: #D9D9D9;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(5){
+    .hotels section.local .hotels-list article.hotel-card:nth-child(4) .description .rating .fa-star:nth-child(5){
         color: #D9D9D9;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(5) .description .rating .fa-star:nth-child(5){
+    .hotels section.local .hotels-list article.hotel-card:nth-child(5) .description .rating .fa-star:nth-child(5){
         color: #D9D9D9;
     }
-    section.hotels section.local .view-more{
+    .hotels section.local .view-more{
         font-weight: bold;
         font-size: 1.2rem;
         padding: 2rem 1rem 0 1rem;
@@ -587,106 +587,106 @@ footer section.footer-columns ul li > a{
     aside.activities > h2{
         padding: 0 0 2rem 0;
     }
-    aside.activities section.activities-content{
+    aside.activities .activities-content{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 -1rem;
         height: 900px;
     }
-    aside.activities section.activities-content section.activities-col{
+    aside.activities .activities-content .activities-col{
         flex-basis: 50%;
         height: 50%;
         align-content: flex-start;
     }
-    aside.activities section.activities-content section.activities-col a.activity-link{
+    aside.activities .activities-content .activities-col a.activity-link{
         margin-bottom: 0;
     }
-    aside.activities section.activities-content section.activities-col article.activity{
+    aside.activities .activities-content .activities-col article.activity{
         margin: 0 1rem 0 1rem;
     }
 
 
     /* réglages  colonne 1 */
-    aside.activities section.activities-content section.activities-col.col-1 {
+    aside.activities .activities-content .activities-col.col-1 {
         padding-bottom: 2rem;
     }
-    aside.activities section.activities-content section.activities-col.col-1 a.activity-link{
+    aside.activities .activities-content .activities-col.col-1 a.activity-link{
         height: 100%;
     }
-    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1){
+    aside.activities .activities-content .activities-col.col-1 article.activity:nth-child(1){
         height: 100%;
     }
     /* réglages colonne 2 */
-    aside.activities section.activities-content section.activities-col.col-2 a.activity-link:nth-child(1){
+    aside.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(1){
         height: 60%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 a.activity-link:nth-child(2){
+    aside.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2){
         height: 40%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 a.activity-link:nth-child(1) article.activity{
+    aside.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(1) article.activity{
         height: calc(100% - 2rem);
         margin: 0 1rem 2rem 1rem;
     }
-    aside.activities section.activities-content section.activities-col.col-2 a.activity-link:nth-child(2) article.activity{
+    aside.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2) article.activity{
         height: calc(100%);
         margin: 0 1rem 0 1rem;
     }
     /**/
 
     /* réglages colonne 3 */
-    aside.activities section.activities-content section.activities-col.col-3 {
+    aside.activities .activities-content .activities-col.col-3 {
         height: 100%;
         order: 4;
     }
-    aside.activities section.activities-content section.activities-col.col-3 a.activity-link{
+    aside.activities .activities-content .activities-col.col-3 a.activity-link{
         height: 50%;
     }
-    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1){
+    aside.activities .activities-content .activities-col.col-3 article.activity:nth-child(1){
         height: 100%;
     }
 
 
     /* réglages colonne 4 */
-    aside.activities section.activities-content section.activities-col.col-4 a.activity-link:nth-child(1){
+    aside.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(1){
         height: 45%;
     }
-    aside.activities section.activities-content section.activities-col.col-4 a.activity-link:nth-child(2){
+    aside.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(2){
         height: 55%;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1){
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(1){
         height: calc(100%);
         margin: 0 1rem 0 1rem;
     }
-    aside.activities section.activities-content section.activities-col.col-4 a.activity-link:nth-child(1) article.activity{
+    aside.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(1) article.activity{
         height: calc(100% - 2rem);
         margin: 0 1rem 2rem 1rem;
     }
 
 
-    aside.activities section.activities-content section.activities-col article.activity figure{
+    aside.activities .activities-content .activities-col article.activity figure{
         width: 100%;
         height: calc(100% - 55px);
     }
 
 
     /* Ajustement des images */
-    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
         object-position: 60% 0;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
         object-position: 100% 45%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(2) figure img{
         object-position: 100% top;
     }
-    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
         object-position: 35% 0;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
         object-position: 0 0;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(2) figure img{
         object-position: 100% 10%;
     }
 }
@@ -743,18 +743,18 @@ footer section.footer-columns ul li > a{
     }
 
     /* Filtres de recherche */
-    section.search section.filters .btn-filter{
+    section.search .filters .btn-filter{
         align-items: baseline;
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter:nth-child(1){
+    section.search .filters .btn-filter:nth-child(1){
         flex-basis: 100%;
         line-height: 1.7rem;
     }
-    section.search section.filters .btn-filter:nth-child(3){
+    section.search .filters .btn-filter:nth-child(3){
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter .btn-content{
+    section.search .filters .btn-filter .btn-content{
         padding: 0 1.4rem;
     }
 
@@ -823,63 +823,63 @@ footer section.footer-columns ul li > a{
     }
 
     /* Filtres de recherche */
-    section.search section.filters .btn-filter{
+    section.search .filters .btn-filter{
         align-items: baseline;
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter:nth-child(1){
+    section.search .filters .btn-filter:nth-child(1){
         flex-basis: 100%;
         line-height: 1.7rem;
     }
-    section.search section.filters .btn-filter:nth-child(3){
+    section.search .filters .btn-filter:nth-child(3){
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter .btn-content{
+    section.search .filters .btn-filter .btn-content{
         padding: 0 1.4rem;
     }
 
     /* Hôtels */
-    section.hotels{
+    .hotels{
         flex-direction: row-reverse;
         padding: 1rem;
     }
     /* Hôtels Populaires*/
-    section.hotels section.popular{
+    .hotels section.popular{
         flex-basis: calc(40%);
         border-radius: 25px;
         padding: 0;
     }
-    section.hotels section.popular > h2{
+    .hotels section.popular > h2{
         padding: 2rem 2rem 0 2rem;
     }
-    section.hotels section.popular section.hotels-list{
+    .hotels section.popular .hotels-list{
         flex-direction: column;
         padding: 2rem 2rem 0 2rem;
     }
 
     /* Hôtels Locaux*/
-    section.hotels section.local{
+    .hotels section.local{
         flex-basis: calc(60% - 2rem);
         padding: 0;
         background-color: #F2F2F2;
         border-radius: 25px;
         margin-right: 2rem;
     }
-    section.hotels section.local > h2{
+    .hotels section.local > h2{
         padding: 2rem 0 0 2rem;
     }
-    section.hotels section.local section.hotels-list{
+    .hotels section.local .hotels-list{
         flex-direction: row;
         padding: 2rem 1rem 0 1rem;
     }
-    section.hotels section.local section.hotels-list article.hotel-card{
+    .hotels section.local .hotels-list article.hotel-card{
         flex-basis: calc(50% - 2rem);
         margin: 0.5rem 1rem 1rem 1rem;
     }
-    section.hotels section.local section.hotels-list article.hotel-card:nth-child(odd) {
+    .hotels section.local .hotels-list article.hotel-card:nth-child(odd) {
         margin: 0.5rem 1rem 1rem 1rem;
     }
-    section.hotels section.local .view-more{
+    .hotels section.local .view-more{
         font-weight: bold;
         font-size: 1.2rem;
         padding: 1rem 1rem 1.5rem 2rem;
@@ -888,22 +888,22 @@ footer section.footer-columns ul li > a{
     /* Activités */
 
     /* Ajustement images */
-    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
         object-position: 100% 10%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
         object-position: 100% 45%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(2) figure img{
         object-position: 0 20%;
     }
-    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
         object-position: 100% 0;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
         object-position: 100% 20%;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(2) figure img{
         object-position: 100% 30%;
     }
 
@@ -963,68 +963,68 @@ footer section.footer-columns ul li > a{
 
 
     /* Filtres de recherche */
-    section.search section.filters .btn-filter{
+    section.search .filters .btn-filter{
         align-items: center;
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter:nth-child(1){
+    section.search .filters .btn-filter:nth-child(1){
         flex-basis: inherit;
         margin: 0 2rem 1rem 0;
         line-height: 1.7rem;
     }
-    section.search section.filters .btn-filter:nth-child(3){
+    section.search .filters .btn-filter:nth-child(3){
         margin: 0 2rem 1rem 0;
     }
-    section.search section.filters .btn-filter .btn-content{
+    section.search .filters .btn-filter .btn-content{
         padding: 0 1.4rem;
     }
 
     /* Hôtels */
-    section.hotels{
+    .hotels{
         flex-direction: row-reverse;
         padding: 1rem;
     }
     /* Hôtels Populaires*/
-    section.hotels section.popular{
+    .hotels section.popular{
         flex-basis: calc(30%);
         border-radius: 25px;
         padding: 0;
     }
-    section.hotels section.popular > h2{
+    .hotels section.popular > h2{
         padding: 2rem 2rem 0 2rem;
     }
-    section.hotels section.popular section.hotels-list{
+    .hotels section.popular .hotels-list{
         flex-direction: column;
         padding: 2rem 2rem 0 2rem;
     }
 
     /* Hôtels Locaux*/
-    section.hotels section.local{
+    .hotels section.local{
         flex-basis: calc(70% - 2rem);
         padding: 0;
         background-color: #F2F2F2;
         border-radius: 25px;
         margin-right: 2rem;
     }
-    section.hotels section.local > h2{
+    .hotels section.local > h2{
         padding: 2rem 0 0 2rem;
     }
-    section.hotels section.local section.hotels-list{
+    .hotels section.local .hotels-list{
         flex-direction: row;
         padding: 2rem 1rem 0 1rem;
     }
-    section.hotels section.local section.hotels-list a.hotel-card-link{
+    .hotels section.local .hotels-list a.hotel-card-link{
         flex-basis: calc(33.33333% - 2rem);
         margin: 1rem 1rem 1rem 1rem;
     }
-    section.hotels section.local section.hotels-list a.hotel-card-link:nth-child(odd){
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(odd){
        margin-right: 1rem;
     }
-    section.hotels section.local section.hotels-list a.hotel-card-link article.hotel-card{
+    .hotels section.local .hotels-list a.hotel-card-link article.hotel-card{
 
         margin: 0;
     }
-    section.hotels section.local .view-more{
+    .hotels section.local .view-more{
         font-weight: bold;
         font-size: 1.2rem;
         padding: 1rem 1rem 1.5rem 2rem;
@@ -1037,7 +1037,7 @@ footer section.footer-columns ul li > a{
     aside.activities > h2{
         padding: 0 0 2rem 0;
     }
-    aside.activities section.activities-content{
+    aside.activities .activities-content{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1045,40 +1045,40 @@ footer section.footer-columns ul li > a{
         height: 450px;
     }
 
-    aside.activities section.activities-content section.activities-col{
+    aside.activities .activities-content .activities-col{
         flex-basis: 25%;
         height: 100%;
     }
-    aside.activities section.activities-content section.activities-col.col-3 a.activity-link {
+    aside.activities .activities-content .activities-col.col-3 a.activity-link {
         height: 100%;
     }
 
-    aside.activities section.activities-content section.activities-col.col-3 {
+    aside.activities .activities-content .activities-col.col-3 {
         height: 100%;
         order: initial;
     }
 
-    aside.activities section.activities-content section.activities-col article.activity figure{
+    aside.activities .activities-content .activities-col article.activity figure{
         width: 100%;
         height: calc(100% - 55px);
     }
     /* Ajustement images */
-    aside.activities section.activities-content section.activities-col.col-1 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
         object-position: 50% 100%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
         object-position: 100% 45%;
     }
-    aside.activities section.activities-content section.activities-col.col-2 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-2 article.activity:nth-child(2) figure img{
         object-position: 20% 0;
     }
-    aside.activities section.activities-content section.activities-col.col-3 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
         object-position: 50% 0;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(1) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
         object-position: 100% 10%;
     }
-    aside.activities section.activities-content section.activities-col.col-4 article.activity:nth-child(2) figure img{
+    aside.activities .activities-content .activities-col.col-4 article.activity:nth-child(2) figure img{
         object-position: 0 0;
     }
 
