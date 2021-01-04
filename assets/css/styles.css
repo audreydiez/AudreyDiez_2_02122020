@@ -466,20 +466,20 @@ footer{
     flex-direction: column;
     font-size: 1rem;
 }
-footer section.footer-columns{
-    margin: 0 3rem;
+footer .footer-columns{
+    margin: 0 2rem 2rem 2rem;
     flex: 1;
 }
-footer section.footer-columns ul{
+footer .footer-columns ul{
     list-style-type: none;
     margin: 0;
     padding: 1rem 0;
 
 }
-footer section.footer-columns ul li{
+footer .footer-columns ul li{
     padding: 0 0 0.5rem 0;
 }
-footer section.footer-columns ul li > a{
+footer .footer-columns ul li > a{
     text-decoration: none;
     color: inherit;
 }
@@ -884,19 +884,19 @@ footer section.footer-columns ul li > a{
         font-size: 1rem;
         padding: 3rem 0;
     }
-    footer section.footer-columns{
-        margin: 0 3rem;
+    footer .footer-columns{
+        margin: 0 2rem 2rem 2rem;
         flex-basis: calc(33.33333% - 6rem);
     }
-    footer section.footer-columns ul{
+    footer .footer-columns ul{
         list-style-type: none;
         margin: 0;
         padding: 1rem 0;
     }
-    footer section.footer-columns ul li{
+    footer .footer-columns ul li{
         padding: 0 0 1rem 0;
     }
-    footer section.footer-columns ul li > a{
+    footer .footer-columns ul li > a{
         text-decoration: none;
         color: inherit;
     }
@@ -904,9 +904,12 @@ footer section.footer-columns ul li > a{
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
     /* Header et Navbar */
+    header nav ul li{
+        font-size: 1rem;
+    }
     header nav ul li.nav-logo{
         flex-grow: 1;
     }
@@ -931,6 +934,13 @@ footer section.footer-columns ul li > a{
     }
 
     /* Barre de recherche  */
+    section.search h1{
+        font-size: 1.6rem;
+    }
+    section.search p{
+        font-size: 1rem;
+    }
+
     .search-bar{
         padding-bottom: 1rem;
     }
@@ -1138,26 +1148,26 @@ footer section.footer-columns ul li > a{
         font-size: 1rem;
         padding: 3rem 0;
     }
-    footer section.footer-columns{
-        margin: 0 2rem;
+    footer .footer-columns{
+        margin: 0 2rem 2rem 2rem;
         flex-basis: calc(33.33333% - 4rem);
     }
-    footer section.footer-columns ul{
+    footer .footer-columns ul{
         list-style-type: none;
         margin: 0;
         padding: 1rem 0;
     }
-    footer section.footer-columns ul li{
+    footer .footer-columns ul li{
         padding: 0 0 1rem 0;
     }
-    footer section.footer-columns ul li > a{
+    footer .footer-columns ul li > a{
         text-decoration: none;
         color: inherit;
     }
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
 
     /* Header et Navbar */
     header nav ul li.nav-logo{
@@ -1220,6 +1230,9 @@ footer section.footer-columns ul li > a{
         flex-direction: column;
         padding: 2rem 2rem 0 2rem;
     }
+    .hotels aside.popular .hotels-list article.hotel-card .description .offer {
+        font-size: 0.8rem;
+    }
 
     /* Hôtels Locaux*/
     .hotels section.local{
@@ -1244,8 +1257,13 @@ footer section.footer-columns ul li > a{
        margin-right: 1rem;
     }
     .hotels section.local .hotels-list a.hotel-card-link article.hotel-card{
-
         margin: 0;
+    }
+    .hotels section.local .hotels-list article.hotel-card .description > h3{
+        font-size: 0.9rem;
+    }
+    .hotels section.local .hotels-list article.hotel-card .description .offer{
+        font-size: 0.85rem;
     }
     .hotels section.local .view-more{
         font-weight: bold;
@@ -1305,6 +1323,10 @@ footer section.footer-columns ul li > a{
         object-position: 0 0;
     }
 
+    section.activities .activities-content .activities-col a.activity-link article.activity h3 {
+        font-size: 0.9rem;
+    }
+
     /* Footer */
     footer{
         display: flex;
@@ -1314,26 +1336,112 @@ footer section.footer-columns ul li > a{
         padding: 3rem 0;
 
     }
-    footer section.footer-columns{
-        margin: 0 3rem;
+    footer .footer-columns{
+        margin: 0 2rem 2rem 2rem;
         flex-basis: calc(33.33333% - 6rem);
     }
-    footer section.footer-columns ul{
+    footer .footer-columns ul{
         list-style-type: none;
         margin: 0;
         padding: 1rem 0;
     }
-    footer section.footer-columns ul li{
+    footer .footer-columns ul li{
         padding: 0 0 1rem 0;
     }
-    footer section.footer-columns ul li > a{
+    footer .footer-columns ul li > a{
         text-decoration: none;
         color: inherit;
     }
 
 }
 
+/* Ajustement d'images + police */
+@media (min-width: 1400px){
+    /* Ajustement images */
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(1) article.hotel-card figure img{
+        object-position: 0 70%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(2) article.hotel-card figure img{
+        object-position: 0 70%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(3) article.hotel-card figure img{
+        object-position: 0 75%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(4) article.hotel-card figure img{
+        object-position: 100% 68%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(5) article.hotel-card figure img{
+        object-position: 0 40%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(6) article.hotel-card figure img{
+        object-position: 0 58%;
+    }
 
+    /* Ajustement images activités*/
+    section.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
+        object-position: 0 50%;
+    }
+    section.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
+        object-position: 0 50%;
+    }
+    section.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2) figure img{
+        object-position: 0 35%;
+    }
+    section.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
+        object-position: 100% 40%;
+    }
+    section.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
+        object-position: 100% 18%;
+    }
+    section.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(2) figure img{
+        object-position: 0 45%;
+    }
+
+    .hotels aside.popular .hotels-list article.hotel-card .description >.title h3 {
+        font-size: 1rem;
+    }
+    .hotels aside.popular .hotels-list article.hotel-card .description .offer {
+        font-size: 0.9rem;
+    }
+
+    .hotels section.local .hotels-list article.hotel-card .description > h3 {
+        font-size: 1rem;
+    }
+    .hotels section.local .hotels-list article.hotel-card .description .offer {
+        font-size: 0.9rem;
+    }
+    section.activities .activities-content .activities-col a.activity-link article.activity h3 {
+        font-size: 1rem;
+    }
+}
+/* Ajustement d'images */
+
+/* Ajustement d'images */
+@media (min-width: 1900px){
+
+
+    /* Ajustement images activités*/
+    section.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
+        object-position: 0 50%;
+    }
+    section.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
+        object-position: 0 46%;
+    }
+    section.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2) figure img{
+        object-position: 0 35%;
+    }
+    section.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
+        object-position: 100% 40%;
+    }
+    section.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
+        object-position: 100% 15%;
+    }
+    section.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(2) figure img{
+        object-position: 0 32%;
+    }
+
+}
+/* Ajustement d'images */
 
 
 
