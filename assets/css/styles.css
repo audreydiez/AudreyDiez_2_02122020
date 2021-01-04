@@ -493,6 +493,92 @@ footer section.footer-columns ul li > a{
 }
 
 
+/* Ajustement d'images */
+@media (min-width: 420px){
+    /* Ajustement images */
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(1) article.hotel-card figure img{
+        object-position: 0 80%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(2) article.hotel-card figure img{
+        object-position: 0 70%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(3) article.hotel-card figure img{
+        object-position: 0 75%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(4) article.hotel-card figure img{
+        object-position: 100% 60%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(5) article.hotel-card figure img{
+        object-position: 0 50%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(6) article.hotel-card figure img{
+        object-position: 0 55%;
+    }
+
+    /* Ajustement images activités*/
+    section.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
+        object-position: 0 40%;
+    }
+    section.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
+        object-position: 0 45%;
+    }
+    section.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2) figure img{
+        object-position: 0 20%;
+    }
+    section.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
+        object-position: 100% 40%;
+    }
+    section.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
+        object-position: 100% 15%;
+    }
+    section.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(2) figure img{
+        object-position: 0 35%;
+    }
+}
+@media (min-width: 700px){
+    /* Ajustement images */
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(1) article.hotel-card figure img{
+        object-position: 0 70%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(2) article.hotel-card figure img{
+        object-position: 0 70%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(3) article.hotel-card figure img{
+        object-position: 0 75%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(4) article.hotel-card figure img{
+        object-position: 100% 68%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(5) article.hotel-card figure img{
+        object-position: 0 40%;
+    }
+    .hotels section.local .hotels-list a.hotel-card-link:nth-child(6) article.hotel-card figure img{
+        object-position: 0 58%;
+    }
+
+    /* Ajustement images activités*/
+    section.activities .activities-content .activities-col.col-1 article.activity:nth-child(1) figure img{
+        object-position: 0 50%;
+    }
+    section.activities .activities-content .activities-col.col-2 article.activity:nth-child(1) figure img{
+        object-position: 0 50%;
+    }
+    section.activities .activities-content .activities-col.col-2 a.activity-link:nth-child(2) figure img{
+        object-position: 0 35%;
+    }
+    section.activities .activities-content .activities-col.col-3 article.activity:nth-child(1) figure img{
+        object-position: 100% 40%;
+    }
+    section.activities .activities-content .activities-col.col-4 article.activity:nth-child(1) figure img{
+        object-position: 100% 18%;
+    }
+    section.activities .activities-content .activities-col.col-4 a.activity-link:nth-child(2) figure img{
+        object-position: 0 45%;
+    }
+}
+/* Ajustement d'images */
+
+
 @media (min-width: 768px) {
     /* Header et Navbar */
     header nav ul li.nav-logo{
@@ -1246,7 +1332,6 @@ footer section.footer-columns ul li > a{
     }
 
 }
-
 
 
 

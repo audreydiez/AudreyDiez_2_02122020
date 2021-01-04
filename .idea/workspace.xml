@@ -4,7 +4,6 @@
     <list default="true" id="1b380fd1-59b6-4b22-a0e0-5c319686081a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,10 @@
       <workItem from="1608721120402" duration="14265000" />
       <workItem from="1608816114230" duration="6157000" />
       <workItem from="1609075149813" duration="13882000" />
-      <workItem from="1609232127204" duration="10363000" />
+      <workItem from="1609232127204" duration="10843000" />
+      <workItem from="1609748997585" duration="180000" />
+      <workItem from="1609763347335" duration="327000" />
+      <workItem from="1609764951841" duration="1675000" />
     </task>
     <servers />
   </component>
